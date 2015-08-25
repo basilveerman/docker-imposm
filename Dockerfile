@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     libgdal1-dev \
     libspatialindex-dev
 
-RUN pip install imposm rtree
+RUN pip install imposm rtree Shapely==1.5.9
 
 ENTRYPOINT ["imposm"]
 CMD ["--help"]
